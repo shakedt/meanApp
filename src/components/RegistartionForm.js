@@ -13,7 +13,7 @@ class RegistartionForm extends React.Component {
     }
     render() {
         return (
-            <Grid container spacing={16}>
+            <Grid container spacing={40}>
                 <Grid item xs={12}>
                     <Typography variant="h5" component="h3">
                         <div className='login-title'> Login Or Join</div>
