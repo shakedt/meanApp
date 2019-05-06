@@ -7,6 +7,7 @@ import DeleteSharpIcon from '@material-ui/icons/DeleteSharp';
 import Fab from '@material-ui/core/Fab';
 import { withStyles } from '@material-ui/core/styles';
 import CheckBox from '@material-ui/core/Checkbox';
+import PropTypes from 'prop-types';
 
 const styles = theme => ({
   root: {
@@ -15,7 +16,7 @@ const styles = theme => ({
   input: {
     textAlign: 'center',
     'padding-right': theme.spacing.unit * 2,
-    color: theme.palette.text.secondary
+    color: theme.palette.text.secondary,
   },
   addIcon: {
     top: '18%',
@@ -40,19 +41,20 @@ class ToDoList extends React.Component {
   }
 
   addTask() {
+    const { task } = this.state;
     console.log('i was clicked');
-    console.log(this.state.task);
+    console.log(task);
     let tasksList = window.localStorage.getItem('tasksList');
     if (tasksList) {
       tasksList = tasksList.split(',');
-      tasksList.push(this.state.task);
+      tasksList.push(task);
     } else {
-      tasksList = [this.state.task];
+      tasksList = [task];
     }
 
     this.setState({
-      tasksList: tasksList,
-      task: ''
+      tasksList,
+      task: '',
     });
 
     window.localStorage.setItem('tasksList', tasksList);
@@ -66,7 +68,7 @@ class ToDoList extends React.Component {
 
   updateInputValue(event) {
     this.setState({
-      task: event.target.value
+      task: event.target.value,
     });
   }
 
@@ -84,20 +86,22 @@ class ToDoList extends React.Component {
   }
 
   render() {
+    const { task } = this.state;
+    let { tasksList } = this.state;
     const { classes } = this.props;
-    const tasksList = this.state.tasksList.map((task) => {
-      return (
-        <div>
-          {task}
-          <DeleteSharpIcon
-            onClick={this.deleteItem.bind(this, task)}></DeleteSharpIcon>
-          <CheckBox
-            checked={false}
-            onChange={this.deleteItem.bind(this, task)}
-          />
-        </div>
-      );
-    });
+    tasksList = tasksList.map(myTask => (
+      <div>
+        {myTask}
+        <DeleteSharpIcon
+          onClick={this.deleteItem}
+        />
+        <CheckBox
+          checked={false}
+          onChange={this.deleteItem}
+        />
+      </div>
+    ));
+
 
     return (
       <div className="toDoList">
@@ -113,7 +117,7 @@ class ToDoList extends React.Component {
             <TextField
               id="outlined-with-placeholder"
               label="Please Enter The Task"
-              value={this.state.task}
+              value={task}
               onChange={this.updateInputValue}
               onKeyDown={this.handleEnterClicked}
               className={classes.input}
@@ -131,7 +135,14 @@ class ToDoList extends React.Component {
       </div>
     );
   }
-
 }
+
+ToDoList.defaultProps = {
+  classes: null,
+};
+
+ToDoList.propTypes = {
+  classes: PropTypes.string,
+};
 
 export default withStyles(styles)(ToDoList);
