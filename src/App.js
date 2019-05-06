@@ -1,27 +1,30 @@
 import React from 'react';
 import './App.css';
-import RegistartionForm from './components/RegistartionForm';
 import 'typeface-roboto';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import ToDoList from './components/ToDoList';
+import RegistrationForm from './components/RegistrationForm';
 
 const theme = createMuiTheme({
-    palette: {
-        type: 'dark'
-    }
+  typography: {
+    useNextVariants: true,
+  },
+  palette: {
+    type: 'dark',
+  },
 });
 
 function App() {
   return (
-      <MuiThemeProvider theme={theme}>
-          <CssBaseline>
-            <div className="App">
-              <RegistartionForm/>
-                <ToDoList/>
-            </div>
-          </CssBaseline>
-      </MuiThemeProvider>
+    <MuiThemeProvider theme={theme}>
+      <CssBaseline>
+        <div className="App">
+          <RegistrationForm />
+          <ToDoList />
+        </div>
+      </CssBaseline>
+    </MuiThemeProvider>
   );
 }
 

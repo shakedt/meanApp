@@ -138,11 +138,11 @@ class ToDoList extends React.Component {
 }
 
 ToDoList.defaultProps = {
-  classes: null,
+  classes: '',
 };
 
 ToDoList.propTypes = {
-  classes: PropTypes.string,
+  classes: PropTypes.object,
 };
 
 export default withStyles(styles)(ToDoList);

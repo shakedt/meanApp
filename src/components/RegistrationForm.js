@@ -3,8 +3,10 @@ import Button from '@material-ui/core/Button';
 import TextField from '@material-ui/core/TextField';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
-class RegistartionForm extends React.Component {
+
+class RegistrationForm extends React.Component {
 
   static handleLoginClick() {
     console.log('login was clicked');
@@ -21,8 +23,19 @@ class RegistartionForm extends React.Component {
   }
 
   render() {
+    const theme = createMuiTheme({
+      typography: {
+        useNextVariants: true,
+      },
+      palette: {
+        type: 'dark',
+      },
+    });
+
+
     const { name } = this.state;
     return (
+      <MuiThemeProvider theme={theme}>
       <Grid container spacing={40}>
         <Grid item xs={12}>
           <Typography variant="h5" component="h3">
@@ -67,8 +80,9 @@ class RegistartionForm extends React.Component {
           </Button>
         </Grid>
       </Grid>
+      </MuiThemeProvider>
     );
   }
 }
 
-export default RegistartionForm;
+export default RegistrationForm;
