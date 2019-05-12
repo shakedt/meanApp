@@ -29,22 +29,22 @@ class ToDoList extends React.Component {
 
     const tasksList = window.localStorage.getItem('tasksList');
     if (tasksList) {
-      this.state = { task: '', tasksList: tasksList.split(',') };
+      this.state = { task: '', tasksList: tasksList.split(','), completedTasks: [] };
     } else {
       window.localStorage.setItem('tasksList', []);
-      this.state = { task: '', tasksList: [] };
+      this.state = { task: '', tasksList: [], completedTasks: [] };
     }
     this.addTask = this.addTask.bind(this);
     this.updateInputValue = this.updateInputValue.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.handleEnterClicked = this.handleEnterClicked.bind(this);
+    this.markTaskAsComplete = this.markTaskAsComplete.bind(this);
   }
 
   addTask() {
     const { task } = this.state;
-    console.log('i was clicked');
-    console.log(task);
     let tasksList = window.localStorage.getItem('tasksList');
+
     if (tasksList) {
       tasksList = tasksList.split(',');
       tasksList.push(task);
@@ -58,6 +58,14 @@ class ToDoList extends React.Component {
     });
 
     window.localStorage.setItem('tasksList', tasksList);
+  }
+
+  markTaskAsComplete(task) {
+    const { completedTasks } = this.state;
+
+    completedTasks.push(task);
+    this.deleteItem(task);
+    this.setState({ completedTasks });
   }
 
   handleEnterClicked(event) {
@@ -87,7 +95,7 @@ class ToDoList extends React.Component {
 
   render() {
     const { task } = this.state;
-    let { tasksList } = this.state;
+    let { tasksList, completedTasks } = this.state;
     const { classes } = this.props;
     tasksList = tasksList.map(myTask => (
       <div>
@@ -97,12 +105,18 @@ class ToDoList extends React.Component {
         />
         <CheckBox
           checked={false}
-          onChange={this.deleteItem}
+          onChange={() => {
+            this.markTaskAsComplete(myTask);
+          }}
         />
       </div>
     ));
 
-
+    let compTasks = completedTasks.map(completedTask => (
+      <div>
+        { completedTask }
+      </div>
+    ));
     return (
       <div className="toDoList">
         <Grid item xs={12}>
@@ -130,7 +144,10 @@ class ToDoList extends React.Component {
           </Grid>
         </Grid>
         <Grid item xs={12}>
-          {tasksList}
+          <div>Completed Tasks</div>
+          { compTasks }
+          <div> To Do Tasks</div>
+          { tasksList }
         </Grid>
       </div>
     );
