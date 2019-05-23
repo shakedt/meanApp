@@ -2,8 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99865852-e9a2-473c-979f-2dcfda3a7146" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/Changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/dbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/sbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/big5-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp936.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp949.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/cp950.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/eucjp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/utf16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/encodings/utf7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/lib/bom-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/lib/extend-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/lib/index.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/lib/streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/body-parser/node_modules/iconv-lite/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/camelcase/index.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/has-flag/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/has-flag/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/has-flag/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/has-flag/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/supports-color/browser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/supports-color/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/supports-color/license" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/supports-color/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/chalk/node_modules/supports-color/readme.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/.travis.yml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/Changelog.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/LICENSE" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/dbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/internal.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-codec.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data-generated.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/sbcs-data.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/big5-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp936.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp949.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/cp950.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/eucjp.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gb18030-ranges.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/gbk-added.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/tables/shiftjis.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/utf16.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/encodings/utf7.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/lib/bom-handling.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/lib/extend-node.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/lib/index.d.ts" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/lib/index.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/lib/streams.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/backend/node_modules/raw-body/node_modules/iconv-lite/package.json" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/usermanager.iml" afterPath="$PROJECT_DIR$/.idea/usermanager.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/ToDoList.js" afterPath="$PROJECT_DIR$/src/components/ToDoList.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/.yarn-integrity" afterPath="$PROJECT_DIR$/src/backend/node_modules/.yarn-integrity" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/camelcase/index.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/camelcase/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/camelcase/license" afterPath="$PROJECT_DIR$/src/backend/node_modules/camelcase/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/camelcase/package.json" afterPath="$PROJECT_DIR$/src/backend/node_modules/camelcase/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/camelcase/readme.md" afterPath="$PROJECT_DIR$/src/backend/node_modules/camelcase/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/get-stream/buffer-stream.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/get-stream/buffer-stream.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/get-stream/index.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/get-stream/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/get-stream/license" afterPath="$PROJECT_DIR$/src/backend/node_modules/get-stream/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/get-stream/package.json" afterPath="$PROJECT_DIR$/src/backend/node_modules/get-stream/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/get-stream/readme.md" afterPath="$PROJECT_DIR$/src/backend/node_modules/get-stream/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/has-flag/index.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/has-flag/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/has-flag/license" afterPath="$PROJECT_DIR$/src/backend/node_modules/has-flag/license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/has-flag/package.json" afterPath="$PROJECT_DIR$/src/backend/node_modules/has-flag/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/has-flag/readme.md" afterPath="$PROJECT_DIR$/src/backend/node_modules/has-flag/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/Changelog.md" afterPath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/Changelog.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/encodings/sbcs-codec.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/encodings/sbcs-codec.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/encodings/sbcs-data.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/encodings/sbcs-data.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/package.json" afterPath="$PROJECT_DIR$/src/backend/node_modules/iconv-lite/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/supports-color/browser.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/supports-color/browser.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/supports-color/index.js" afterPath="$PROJECT_DIR$/src/backend/node_modules/supports-color/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/supports-color/package.json" afterPath="$PROJECT_DIR$/src/backend/node_modules/supports-color/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/node_modules/supports-color/readme.md" afterPath="$PROJECT_DIR$/src/backend/node_modules/supports-color/readme.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/package.json" afterPath="$PROJECT_DIR$/src/backend/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/server.js" afterPath="$PROJECT_DIR$/src/backend/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/backend/yarn.lock" afterPath="$PROJECT_DIR$/src/backend/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -49,14 +139,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToDoList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ToDoList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/ToDoList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="556">
+            <state relative-caret-position="2100">
               <caret line="149" column="22" lean-forward="false" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/backend/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,7 +196,7 @@
       <file leaf-file-name="RegistartionForm.test.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/__tests__/RegistartionForm.test.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
+            <state relative-caret-position="15">
               <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -108,18 +208,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="jest-config-schema.json" pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/javascript/jest/jest-config-schema.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
-              <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
+            <state relative-caret-position="330">
+              <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -160,7 +250,6 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/tests/App.test.js" />
         <option value="$PROJECT_DIR$/backend/package.json" />
-        <option value="$PROJECT_DIR$/src/backend/server.js" />
         <option value="$PROJECT_DIR$/.eslintrc.js" />
         <option value="$PROJECT_DIR$/src/tests/registartionForm.test.js" />
         <option value="$PROJECT_DIR$/yarn.lock" />
@@ -174,6 +263,7 @@
         <option value="$PROJECT_DIR$/src/components/RegistrationForm.js" />
         <option value="$PROJECT_DIR$/src/__tests__/RegistartionForm.test.js" />
         <option value="$PROJECT_DIR$/src/components/ToDoList.js" />
+        <option value="$PROJECT_DIR$/src/backend/server.js" />
       </list>
     </option>
   </component>
@@ -196,11 +286,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
     <handled-path value="$PROJECT_DIR$/src/backend/node_modules" />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="-1265" />
-    <option name="y" value="-1080" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+    <option name="width" value="1280" />
+    <option name="height" value="800" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -217,8 +305,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,7 +337,7 @@
               <item name="usermanager" type="b2602c69:ProjectViewProjectNode" />
               <item name="usermanager" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="__tests__" type="462c0819:PsiDirectoryNode" />
+              <item name="backend" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="usermanager" type="b2602c69:ProjectViewProjectNode" />
@@ -263,6 +349,8 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,34 +407,36 @@
       <workItem from="1556794796160" duration="11670000" />
       <workItem from="1557053276147" duration="1160000" />
       <workItem from="1557114094334" duration="12380000" />
-      <workItem from="1557247075322" duration="3719000" />
+      <workItem from="1557247075322" duration="5403000" />
+      <workItem from="1557832002196" duration="2705000" />
+      <workItem from="1558632086275" duration="48000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38768000" />
+    <option name="totallyTimeSpent" value="43205000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1265" y="-1080" width="1920" height="1080" extended-state="0" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2494043" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24960506" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32935324" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32827586" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -445,6 +535,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -524,6 +615,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -646,13 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/backend/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/node_modules/react-scripts/config/jest/babelTransform.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -681,14 +766,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="945">
           <caret line="63" column="4" lean-forward="false" selection-start-line="63" selection-start-column="4" selection-end-line="63" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="34" lean-forward="false" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+        <state relative-caret-position="330">
+          <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -747,7 +831,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/__tests__/RegistartionForm.test.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="15">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -757,11 +841,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/ToDoList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="556">
+        <state relative-caret-position="2100">
           <caret line="149" column="22" lean-forward="false" selection-start-line="149" selection-start-column="22" selection-end-line="149" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/backend/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
