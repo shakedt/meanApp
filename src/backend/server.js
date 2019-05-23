@@ -9,7 +9,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get('/api/hello', (req, res) => {
-  mongoose.connect('mongodb://shaked:163452zz@ds149606.mlab.com:49606/usermanager', {useNewUrlParser: true}).then(() => {
+  mongoose.connect('mongodb://shaked:163452zz@ds149606.mlab.com:49606/usermanager', { useNewUrlParser: true }).then(() => {
     console.log('moongose connected correctly.');
   });
   res.send({ express: 'Hello From Express' });
