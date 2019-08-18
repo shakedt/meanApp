@@ -6,6 +6,7 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import ToDoList from './components/ToDoList';
 import RegistrationForm from './components/RegistrationForm';
 
+/* eslint linebreak-style: ["error", "windows"] */
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,
@@ -20,7 +21,6 @@ function App() {
     <MuiThemeProvider theme={theme}>
       <CssBaseline>
         <div className="App">
-          <RegistrationForm />
           <ToDoList />
         </div>
       </CssBaseline>

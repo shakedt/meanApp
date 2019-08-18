@@ -9,6 +9,8 @@ import { withStyles } from '@material-ui/core/styles';
 import CheckBox from '@material-ui/core/Checkbox';
 import PropTypes from 'prop-types';
 
+/* eslint linebreak-style: ["error", "windows"] */
+
 const styles = theme => ({
   root: {
     flexGrow: 1,
@@ -83,7 +85,6 @@ class ToDoList extends React.Component {
   deleteItem(task) {
     const tasksList = window.localStorage.getItem('tasksList').split(',');
     const location = tasksList.indexOf(task);
-
     tasksList.splice(location, 1);
 
     this.setState({

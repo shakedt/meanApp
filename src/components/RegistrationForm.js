@@ -5,9 +5,9 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
+/* eslint linebreak-style: ["error", "windows"] */
 
 class RegistrationForm extends React.Component {
-
   static handleLoginClick() {
     console.log('login was clicked');
   }
