@@ -28,7 +28,9 @@ const styles = theme => ({
 class ToDoList extends React.Component {
   constructor(props) {
     super(props);
-
+    // ToDo:  connect To Redux.
+    // ToDo: turn local storage to requests from mongodb
+    // ToDo : ? 
     const tasksList = window.localStorage.getItem('tasksList');
     if (tasksList) {
       this.state = { task: '', tasksList: tasksList.split(','), completedTasks: [] };

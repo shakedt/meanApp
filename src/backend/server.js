@@ -21,35 +21,27 @@ const taskSchema = new mongoose.Schema({
 });
 const Task = mongoose.model('Task', taskSchema);
 
-app.get('/api/hello', (req, res) => {
-  res.send({ express: 'Hello From Express' });
+app.get('/api/addTask', (req, res) => {
   const newTask = new Task({ task: req.params.task });
-  newTask.save((err, tasks) => {
+  newTask.save((err) => {
     if (err) {
-      console.log('error');
+      res.send(err);
     } else {
-      if (tasks) {
-        console.log(tasks);
-      }
-      console.log('success');
+      res.send({ action: 'success' });
     }
-    return true;
   });
 });
-
-app.get('/api/world', (req, res) => {
-  console.log(req.body);
-  res.send(
-    `I received your POST request. This is what you sent me: ${req.body.post}`,
-  );
+// ToDo: create a delete task
+app.get('/api/deletTask', (req, res) => {
+  res.send({ action: 'great success' });
 });
 
 app.get('/api/getTasks', (req, res) => {
-  // res.send(db.collection('tasks').find());
-  console.log(db.collection.find('Tasks'));
-  console.log(db);
-  console.log('');
-  res.send('great success');
+  let tasks = [];
+  Task.find({}, (err, myTasks) => {
+    tasks = myTasks.map(task => task.task);
+    res.send(tasks);
+  });
 });
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
