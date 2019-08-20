@@ -22,8 +22,8 @@ const styles = theme => ({
   },
   addIcon: {
     top: '18%',
-  },
-});
+  }, });
+
 
 class ToDoList extends React.Component {
   constructor(props) {
@@ -31,22 +31,34 @@ class ToDoList extends React.Component {
     // ToDo:  connect To Redux.
     // ToDo: turn local storage to requests from mongodb
     // ToDo : ? 
-    const tasksList = window.localStorage.getItem('tasksList');
-    if (tasksList) {
-      this.state = { task: '', tasksList: tasksList.split(','), completedTasks: [] };
-    } else {
-      window.localStorage.setItem('tasksList', []);
-      this.state = { task: '', tasksList: [], completedTasks: [] };
-    }
+    // const tasksList = window.localStorage.getItem('tasksList');
+    // if (tasksList) {
+    //   this.state = { task: '', tasksList: tasksList.split(','), completedTasks: [] };
+    // } else {
+    //  window.localStorage.setItem('tasksList', []);
+    //  this.state = { task: '', tasksList: [], completedTasks: [] };
+    // }
+    this.state = { task: '', tasksList: [], completedTasks: [] };
     this.addTask = this.addTask.bind(this);
     this.updateInputValue = this.updateInputValue.bind(this);
     this.deleteItem = this.deleteItem.bind(this);
     this.handleEnterClicked = this.handleEnterClicked.bind(this);
     this.markTaskAsComplete = this.markTaskAsComplete.bind(this);
+    this.fetchTasks();
   }
 
-  fetchData() {
-    fetch('http://localhost:5001/api/deletTask').then((data) => {
+  fetchTasks() {
+    fetch('http://localhost:5001/api/getTasks').then((data) => {
+      data.json().then((tasksList) => {
+        this.setState({
+          tasksList,
+        });
+      });
+    });
+  }
+
+  fetchData(taskType) {
+    fetch(`http://localhost:5001/api/${taskType}`).then((data) => {
         data.json().then((data) => {console.log(data)});
     });
   }
