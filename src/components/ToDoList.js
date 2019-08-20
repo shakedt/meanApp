@@ -45,6 +45,12 @@ class ToDoList extends React.Component {
     this.markTaskAsComplete = this.markTaskAsComplete.bind(this);
   }
 
+  fetchData() {
+    fetch('http://localhost:5001/api/deletTask').then((data) => {
+        data.json().then((data) => {console.log(data)});
+    });
+  }
+
   addTask() {
     const { task } = this.state;
     let tasksList = window.localStorage.getItem('tasksList');

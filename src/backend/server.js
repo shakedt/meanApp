@@ -1,12 +1,15 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require('cors');
 /* eslint linebreak-style: ["error", "windows"] */
 
 const app = express();
 const port = process.env.PORT || 5001;
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(cors());
 mongoose.connect('mongodb://shaked:163452zz@ds149606.mlab.com:49606/usermanager', { useNewUrlParser: true }).then(() => {
   console.log('moongose connected correctly.');
 });
