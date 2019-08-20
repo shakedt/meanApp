@@ -25,7 +25,7 @@ const taskSchema = new mongoose.Schema({
 const Task = mongoose.model('Task', taskSchema);
 
 app.get('/api/addTask', (req, res) => {
-  const newTask = new Task({ task: req.params.task });
+  const newTask = new Task({ task: req.query.task });
   newTask.save((err) => {
     if (err) {
       res.send(err);

@@ -30,7 +30,8 @@ class ToDoList extends React.Component {
     super(props);
     // ToDo:  connect To Redux.
     // ToDo: turn local storage to requests from mongodb
-    // ToDo : ? 
+    // ToDo : ?
+    // ToDo add add task code.: 
     // const tasksList = window.localStorage.getItem('tasksList');
     // if (tasksList) {
     //   this.state = { task: '', tasksList: tasksList.split(','), completedTasks: [] };
@@ -57,29 +58,21 @@ class ToDoList extends React.Component {
     });
   }
 
-  fetchData(taskType) {
-    fetch(`http://localhost:5001/api/${taskType}`).then((data) => {
-        data.json().then((data) => {console.log(data)});
-    });
-  }
-
-  addTask() {
+  addTask() { 
     const { task } = this.state;
-    let tasksList = window.localStorage.getItem('tasksList');
-
-    if (tasksList) {
-      tasksList = tasksList.split(',');
-      tasksList.push(task);
-    } else {
-      tasksList = [task];
-    }
-
+    fetch(`http://localhost:5001/api/addTask?task=${task}`).then((data) => {
+      data.json().then((task) => {
+        if (task.action === 'success') {
+          this.fetchTasks();
+        }
+      });
+    });
+    
     this.setState({
-      tasksList,
       task: '',
     });
 
-    window.localStorage.setItem('tasksList', tasksList);
+
   }
 
   markTaskAsComplete(task) {
