@@ -47,10 +47,11 @@ class ToDoList extends React.Component {
     this.markTaskAsComplete = this.markTaskAsComplete.bind(this);
     this.fetchTasks();
   }
-
+// add logic to set task as complete
   fetchTasks() {
     fetch('http://localhost:5001/api/getTasks').then((data) => {
       data.json().then((tasksList) => {
+        console.log(tasksList[0]);
         this.setState({
           tasksList,
         });
@@ -76,11 +77,13 @@ class ToDoList extends React.Component {
   }
 
   markTaskAsComplete(task) {
-    const { completedTasks } = this.state;
+//    const { completedTasks } = this.state;
+    
+    console.log('look so pretty: ', task);
 
-    completedTasks.push(task);
+//    completedTasks.push(task);
     this.deleteItem(task);
-    this.setState({ completedTasks });
+//    this.setState({ completedTasks });
   }
 
   handleEnterClicked(event) {
@@ -96,15 +99,13 @@ class ToDoList extends React.Component {
   }
 
   deleteItem(task) {
-    const tasksList = window.localStorage.getItem('tasksList').split(',');
-    const location = tasksList.indexOf(task);
-    tasksList.splice(location, 1);
-
-    this.setState({
-      tasksList,
+    fetch(`http://localhost:5001/api/deleteTask?task=${task}`).then((data) => {
+      data.json().then((response) => {
+        if (response.action === 'success') {
+          this.fetchTasks();
+        }
+      });
     });
-    window.localStorage.setItem('tasksList', tasksList);
-    console.log('i was deleted ');
   }
 
   render() {
@@ -115,7 +116,9 @@ class ToDoList extends React.Component {
       <div>
         {myTask}
         <DeleteSharpIcon
-          onClick={this.deleteItem}
+          onClick={() => {
+            this.deleteItem(myTask);
+          }}
         />
         <CheckBox
           checked={false}

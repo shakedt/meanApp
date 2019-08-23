@@ -3,7 +3,13 @@ const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 const cors = require('cors');
 /* eslint linebreak-style: ["error", "windows"] */
+/**
+ToDO:
+1. add logic to pervent from saving empty strings,
+2. add node js testing.
+3. add mongo db tests.
 
+*/
 const app = express();
 const port = process.env.PORT || 5001;
 
@@ -21,6 +27,7 @@ db.on('error', () => {
 
 const taskSchema = new mongoose.Schema({
   task: String,
+  completed: Boolean,
 });
 const Task = mongoose.model('Task', taskSchema);
 
@@ -35,8 +42,13 @@ app.get('/api/addTask', (req, res) => {
   });
 });
 // ToDo: create a delete task
-app.get('/api/deletTask', (req, res) => {
-  res.send({ action: 'great success' });
+app.get('/api/deleteTask', (req, res) => {
+  console.log('task is: ', req.query.task);
+  Task.deleteOne({ task: req.query.task }, (error) => {
+    console.log(error);
+
+    res.send({ action: 'success' });
+  });
 });
 
 app.get('/api/getTasks', (req, res) => {
