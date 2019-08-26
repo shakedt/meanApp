@@ -14,4 +14,9 @@ describe('ToDoList', () => {
 
     expect(wrapper.html().indexOf('ToDoList') >= 0).toBe(true);
   });
+
+  it('should call deleteItem on DeleteSharpIcon click', () => {
+   // to do add login here 
+  });
+
 });

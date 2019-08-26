@@ -41,6 +41,16 @@ app.get('/api/addTask', (req, res) => {
     }
   });
 });
+
+app.get('/api/markTaskCompleted', async (req, res) => {
+  const filter = { task: req.query.task };
+  const update = { completed: true };
+
+  const returnedValue = await Task.findOneAndUpdate(filter, update);
+
+  console.log('this is what returned:  ', returnedValue);
+  res.send({ action: 'success' });
+});
 // ToDo: create a delete task
 app.get('/api/deleteTask', (req, res) => {
   console.log('task is: ', req.query.task);
@@ -54,7 +64,7 @@ app.get('/api/deleteTask', (req, res) => {
 app.get('/api/getTasks', (req, res) => {
   let tasks = [];
   Task.find({}, (err, myTasks) => {
-    tasks = myTasks.map(task => task.task);
+    tasks = myTasks.map(task => task);
     res.send(tasks);
   });
 });

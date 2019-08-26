@@ -30,15 +30,6 @@ class ToDoList extends React.Component {
     super(props);
     // ToDo:  connect To Redux.
     // ToDo: turn local storage to requests from mongodb
-    // ToDo : ?
-    // ToDo add add task code.: 
-    // const tasksList = window.localStorage.getItem('tasksList');
-    // if (tasksList) {
-    //   this.state = { task: '', tasksList: tasksList.split(','), completedTasks: [] };
-    // } else {
-    //  window.localStorage.setItem('tasksList', []);
-    //  this.state = { task: '', tasksList: [], completedTasks: [] };
-    // }
     this.state = { task: '', tasksList: [], completedTasks: [] };
     this.addTask = this.addTask.bind(this);
     this.updateInputValue = this.updateInputValue.bind(this);
@@ -47,13 +38,23 @@ class ToDoList extends React.Component {
     this.markTaskAsComplete = this.markTaskAsComplete.bind(this);
     this.fetchTasks();
   }
-// add logic to set task as complete
+
+  // add logic to set task as complete
   fetchTasks() {
     fetch('http://localhost:5001/api/getTasks').then((data) => {
-      data.json().then((tasksList) => {
-        console.log(tasksList[0]);
+      data.json().then((unfilteredTasks) => {
+        console.log(unfilteredTasks);
+        // toDo:turn this into a better soultion this might be abit haviy with all the filtering;
+        const tasksList = unfilteredTasks
+          .filter(task => task.completed !== true)
+          .map(task => task.task);
+        const completedTasks = unfilteredTasks
+          .filter(task => task.completed === true)
+          .map(task => task.task);
+        console.log(tasksList);
         this.setState({
           tasksList,
+          completedTasks,
         });
       });
     });
@@ -62,28 +63,23 @@ class ToDoList extends React.Component {
   addTask() { 
     const { task } = this.state;
     fetch(`http://localhost:5001/api/addTask?task=${task}`).then((data) => {
-      data.json().then((task) => {
-        if (task.action === 'success') {
+      data.json().then((currentTask) => {
+        if (currentTask.action === 'success') {
           this.fetchTasks();
         }
       });
     });
-    
+
     this.setState({
       task: '',
     });
-
-
   }
 
   markTaskAsComplete(task) {
-//    const { completedTasks } = this.state;
-    
+    const { completedTasks } = this.state;
     console.log('look so pretty: ', task);
-
-//    completedTasks.push(task);
-    this.deleteItem(task);
-//    this.setState({ completedTasks });
+    completedTasks.push(task);
+    this.setState({ completedTasks });
   }
 
   handleEnterClicked(event) {
@@ -109,8 +105,8 @@ class ToDoList extends React.Component {
   }
 
   render() {
-    const { task } = this.state;
-    let { tasksList, completedTasks } = this.state;
+    const { task, completedTasks } = this.state;
+    let { tasksList } = this.state;
     const { classes } = this.props;
     tasksList = tasksList.map(myTask => (
       <div>
@@ -129,7 +125,7 @@ class ToDoList extends React.Component {
       </div>
     ));
 
-    let compTasks = completedTasks.map(completedTask => (
+    const compTasks = completedTasks.map(completedTask => (
       <div>
         { completedTask }
       </div>
@@ -170,6 +166,7 @@ class ToDoList extends React.Component {
     );
   }
 }
+
 
 ToDoList.defaultProps = {
   classes: '',
