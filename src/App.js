@@ -7,6 +7,8 @@ import ToDoList from './components/ToDoList';
 import RegistrationForm from './components/RegistrationForm';
 
 /* eslint linebreak-style: ["error", "windows"] */
+/* eslint linebreak-style: ["error", "unix"] */
+
 const theme = createMuiTheme({
   typography: {
     useNextVariants: true,

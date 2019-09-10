@@ -10,6 +10,7 @@ import CheckBox from '@material-ui/core/Checkbox';
 import PropTypes from 'prop-types';
 
 /* eslint linebreak-style: ["error", "windows"] */
+/* eslint linebreak-style: ["error", "unix"] */
 
 const styles = theme => ({
   root: {

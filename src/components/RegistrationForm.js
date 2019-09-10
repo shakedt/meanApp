@@ -6,6 +6,7 @@ import Typography from '@material-ui/core/Typography';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core/styles';
 
 /* eslint linebreak-style: ["error", "windows"] */
+/* eslint linebreak-style: ["error", "unix"] */
 
 class RegistrationForm extends React.Component {
   static handleLoginClick() {
