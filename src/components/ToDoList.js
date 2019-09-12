@@ -10,7 +10,7 @@ import CheckBox from '@material-ui/core/Checkbox';
 import PropTypes from 'prop-types';
 
 /* eslint linebreak-style: ["error", "windows"] */
-/* eslint linebreak-style: ["error", "unix"] */
+// /* eslint linebreak-style: ["error", "unix"] */
 
 const styles = theme => ({
   root: {
@@ -23,7 +23,8 @@ const styles = theme => ({
   },
   addIcon: {
     top: '18%',
-  }, });
+  },
+});
 
 
 class ToDoList extends React.Component {
@@ -61,7 +62,7 @@ class ToDoList extends React.Component {
     });
   }
 
-  addTask() { 
+  addTask() {
     const { task } = this.state;
     fetch(`http://localhost:5001/api/addTask?task=${task}`).then((data) => {
       data.json().then((currentTask) => {
@@ -77,10 +78,9 @@ class ToDoList extends React.Component {
   }
 
   markTaskAsComplete(task) {
-    const { completedTasks } = this.state;
-    console.log('look so pretty: ', task);
-    completedTasks.push(task);
-    this.setState({ completedTasks });
+    fetch(`http://localhost:5001/api/markTaskCompleted?task=${task}`).then((data) => {
+      this.fetchTasks();
+    });
   }
 
   handleEnterClicked(event) {
